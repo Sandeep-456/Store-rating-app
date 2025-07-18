@@ -1,0 +1,303 @@
+.admin-panel-container {
+  padding: 40px 150px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1f2937;
+  background: linear-gradient(135deg, #c3ecf7, #f5f7fa);
+  animation: fadeInPanel 0.6s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #1e3a8a;
+}
+
+.caution-box {
+  background: #fff8db;
+  border-left: 6px solid #facc15;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #92400e;
+  animation: slideDown 0.4s ease;
+}
+
+/* Create User Form */
+.create-user-form {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  transition: 0.4s ease;
+}
+
+.create-user-form h3 {
+  margin-bottom: 16px;
+  color: #2563eb;
+}
+
+.create-user-form input,
+.create-user-form select {
+  display: block;
+  width: 98%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.create-user-form button {
+  padding: 10px 16px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.create-user-form button:hover {
+  background: #2563eb;
+}
+
+.error-msg {
+  color: red;
+}
+.success-msg {
+  color: green;
+}
+.delete-icon{
+  color:red;
+}
+/* Tabs */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 16px;
+}
+
+.tab-buttons button {
+  padding: 10px 18px;
+  background: #e0e7ff;
+  color: #1e40af;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.tab-buttons button.active {
+  background: #6366f1;
+  color: white;
+}
+
+.tab-buttons button:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+/* Cards */
+.users-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.user-card {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  position: relative;
+  animation: popIn 0.4s ease;
+}
+
+.user-card p {
+  margin: 8px 0;
+}
+
+.actions {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+.actions svg {
+  cursor: pointer;
+  color: #475569;
+  transition: transform 0.3s;
+}
+
+.actions svg:hover {
+  transform: scale(1.1);
+  color: #1e40af;
+}
+
+/* Modal */
+.modal {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  animation: fadeInModal 0.3s ease-in-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.modal button {
+  padding: 10px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal .cancel-btn {
+  background: #9ca3af;
+}
+
+/* Animations */
+@keyframes fadeInPanel {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInModal {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* === Responsive Enhancements === */
+@media screen and (max-width: 1024px) {
+  .admin-panel-container {
+    padding: 30px 40px;
+    width: 100%;
+  }
+
+  .create-user-form {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .admin-panel-container {
+    padding: 20px 16px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .create-user-form {
+    padding: 24px;
+  }
+
+  .tab-buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .tab-buttons button {
+    flex: 1 1 auto;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .user-card {
+    padding: 12px;
+  }
+
+  .modal {
+    width: 90%;
+    max-width: 420px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .create-user-form input,
+  .create-user-form select,
+  .modal input {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .create-user-form button,
+  .modal button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .modal h3 {
+    font-size: 1.1rem;
+  }
+
+  .modal {
+    padding: 16px;
+  }
+
+  .tab-buttons button {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+
+  .user-card {
+    font-size: 0.9rem;
+  }
+
+  .actions {
+    top: 10px;
+    right: 10px;
+    gap: 8px;
+  }
+
+  .actions svg {
+    width: 16px;
+    height: 16px;
+  }
+}

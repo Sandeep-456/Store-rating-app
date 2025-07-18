@@ -1,0 +1,261 @@
+.home-page {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafc;
+  color: #1f2937;
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 100px 20px 60px;
+  text-align: center;
+  background: linear-gradient(to right, #6b73ff, #000dff);
+  color: white;
+  width: 100%;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-buttons button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons button:first-child {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.hero-buttons button:first-child:hover {
+  background-color: #ff8433;
+  box-shadow: 0 0 10px rgba(255, 107, 0, 0.4);
+}
+
+.hero-buttons button:last-child {
+  background-color: white;
+  color: #4f46e5;
+  border: 2px solid #4f46e5;
+}
+
+.hero-buttons button:last-child:hover {
+  background-color: #eef2ff;
+  box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+}
+
+/* Features Section */
+.features-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #111827;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  padding: 24px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 60px 20px;
+  background-color: #e0e7ff;
+  text-align: center;
+  width: 100%;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.how-it-works ol {
+  list-style-position: inside;
+  padding: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Get Started Section */
+.get-started {
+  padding: 60px 20px;
+  background-color: #4f46e5;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.get-started h2 {
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+}
+
+.get-started button {
+  padding: 12px 24px;
+  background-color: white;
+  color: #4f46e5;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-started button:hover {
+  background-color: #e0e7ff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .features-section h2,
+  .how-it-works h2,
+  .get-started h2 {
+    font-size: 1.5rem;
+  }
+
+  .feature-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* Responsive Queries */
+@media (max-width: 992px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+    width: 100%;
+  }
+
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+
+  .features-section h2,
+  .how-it-works h2,
+  .get-started h2 {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .how-it-works ol {
+    font-size: 1rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 60px 16px 40px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .features-section {
+    padding: 60px 16px;
+  }
+
+  .get-started {
+    padding: 50px 16px;
+  }
+
+  .how-it-works {
+    padding: 50px 16px;
+  }
+
+  .get-started h2 {
+    font-size: 1.4rem;
+  }
+
+  .how-it-works h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    max-width: 240px;
+  }
+}
+.login-p{
+  margin-top: 50px;
+}
+.login-details{
+  list-style-type: none;
+}

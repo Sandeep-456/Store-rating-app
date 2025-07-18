@@ -1,0 +1,129 @@
+.stores-container {
+  padding: 60px 50px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1f2937;
+  background: linear-gradient(to bottom right, #f0f4ff, #e8edff);
+  min-height: 100vh;
+}
+
+.stores-container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e3a8a;
+}
+
+.search-box {
+  display: block;
+  margin: 0 auto 40px;
+  padding: 12px 20px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.search-box:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+  outline: none;
+}
+
+.store-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.store-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.store-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.store-card h3 {
+  font-size: 1.4rem;
+  color: #111827;
+}
+
+.store-card p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.rating-block {
+  margin-top: 12px;
+}
+
+.no-store {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #9ca3af;
+}
+
+/* ✅ Responsive Styling */
+@media (max-width: 1024px) {
+  .stores-container {
+    padding: 50px 30px;
+    width: 100%;
+  }
+
+  .search-box {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .stores-container {
+    padding: 40px 20px;
+  }
+
+  .stores-container h2 {
+    font-size: 2rem;
+  }
+
+  .search-box {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .store-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .store-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stores-container {
+    padding: 30px 16px;
+  }
+
+  .stores-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .store-card {
+    padding: 16px;
+  }
+
+  .store-list {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box {
+    width: 80%;
+  }
+}
