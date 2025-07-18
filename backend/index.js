@@ -16,7 +16,7 @@ const storeOwnerRoutes = require("./routes/storeOwnerRoutes");
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://your-frontend.netlify.app'],
+  origin: ['http://localhost:3000', 'store-rating-app-xi.vercel.app'],
   credentials: true,
 }));
 app.use(express.json());
