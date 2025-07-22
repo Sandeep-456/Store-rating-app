@@ -58,9 +58,9 @@ const Home = () => {
                 <button onClick={() => navigate('/register')}>Create your account</button>
                 <p className='login-p'>Login credientials:</p>
                 <ul className='login-details'>
-                    <li>user: user@example.com/ User@123!</li>
-                    <li>store_owner: store@example.com/ Store@123!</li>
-                    <li>addmin: admin@example.com/ Admin@123!</li>
+                    <li>user: chakri@example.com/ Chakri@123</li>
+                    <li>store_owner: store@system.com/ Store@12345678</li>
+                    <li>addmin: Sandy@system.com/ Sandy@123</li>
                 </ul>
             </section>
         </div>
