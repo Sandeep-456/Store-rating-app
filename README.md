@@ -4,6 +4,18 @@ A full-stack web application where users can rate stores, view store details, an
 
 ---
 
+Live link: https://store-rating-app-xi.vercel.app/
+
+---
+
+Login credientials:
+
+user: chakri@example.com/ Chakri@123
+store_owner: store@system.com/ Store@12345678
+addmin: Sandy@system.com/ Sandy@123
+
+---
+
 ## 🚀 Features
 
 - ✅ User authentication (Login, Register)
